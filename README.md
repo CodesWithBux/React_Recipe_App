@@ -1,4 +1,10 @@
+# Luminous 🍯
 
+A warm, responsive **Recipe Discovery & Meal Planning** app built in React by
+**Phatsimo Maseng (PM)**, with **47 meals** — a full South-African-inspired meal
+plan plus the original app dishes. Browse recipes, watch the tutorial, save favourites,
+and drop dishes into a Monday–Sunday plan — with everything you save persisted
+in your browser.
 
 ## Features
 
