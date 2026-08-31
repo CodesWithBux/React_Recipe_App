@@ -1,0 +1,36 @@
+/* Library-style footer: light surface, border-top, centered column. */
+.footer {
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+  margin-top: 60px;
+}
+.inner {
+  max-width: var(--content);
+  margin: 0 auto;
+  padding: 30px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+.mark {
+  font-family: var(--display);
+  font-size: 1.4rem;
+  color: var(--ink);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--glow);
+  box-shadow: 0 0 10px 1px rgba(242, 169, 59, 0.6);
+}
+.links { display: flex; gap: 20px; font-size: 0.9rem; flex-wrap: wrap; justify-content: center; }
+.links a { color: var(--muted); }
+.links a:hover { color: var(--ink); }
+.copy { color: var(--muted); font-size: 0.82rem; margin: 0; }
