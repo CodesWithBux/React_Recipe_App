@@ -1,0 +1,80 @@
+/* ===========================================================================
+   Luminous — global design tokens & base styles.
+   Identity: a warm, glowing recipe app. Deep plum ink, honey "glow" accent,
+   terracotta ember, sage-green fresh. Fraunces display + Inter body.
+   =========================================================================== */
+:root {
+  /* Colour palette (professional, consistent across the app) */
+  --ink: #241b2f;          /* deep plum — primary text & headers */
+  --plum: #3a2a4d;         /* raised plum — nav, footer */
+  --glow: #f2a93b;         /* honey glow — primary CTA / accent */
+  --glow-deep: #d98a1f;    /* pressed glow */
+  --ember: #c2410c;        /* terracotta — secondary accent */
+  --sage: #4e8367;         /* fresh green — success / favourites */
+  --danger: #b42318;       /* remove / destructive */
+  --cream: #fbf6ee;        /* warm surface (used sparingly now) */
+  --paper: #f4f4f6;        /* neutral subtle fill — replaces cream on large areas */
+  --bg: #ffffff;           /* page background — clean white */
+  --surface: #ffffff;      /* cards */
+  --line: #eae0d2;         /* hairline borders */
+  --muted: #7a6e63;        /* secondary text */
+
+  /* Typography */
+  --display: 'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif;
+  --body: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Shape & depth */
+  --radius: 12px;
+  --radius-lg: 20px;
+  --shadow-card: 0 1px 2px rgba(36, 27, 47, 0.05), 0 10px 26px rgba(36, 27, 47, 0.08);
+  --shadow-hover: 0 16px 40px rgba(36, 27, 47, 0.16);
+  --glow-halo: 0 0 0 3px rgba(242, 169, 59, 0.18), 0 14px 34px rgba(242, 169, 59, 0.28);
+  --content: 1180px;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--body);
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typography hierarchy — clearly established scale */
+h1, h2, h3, h4 {
+  font-family: var(--display);
+  font-weight: 600;
+  line-height: 1.1;
+  margin: 0;
+  color: var(--ink);
+}
+h1 { font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -0.02em; }
+h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); }
+h3 { font-size: 1.25rem; }
+h4 { font-size: 1.05rem; }
+p { margin: 0 0 1rem; }
+
+a { color: var(--ember); text-decoration: none; }
+button { font-family: inherit; cursor: pointer; }
+
+/* Visible keyboard focus everywhere (accessibility floor) */
+:focus-visible {
+  outline: 3px solid var(--glow);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.container {
+  max-width: var(--content);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}

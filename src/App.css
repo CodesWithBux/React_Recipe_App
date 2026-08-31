@@ -1,0 +1,10 @@
+/* App shell — sticky header + footer with the page content between them. */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.app__main {
+  flex: 1;
+  width: 100%;
+}
