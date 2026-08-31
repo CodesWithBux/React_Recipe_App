@@ -1,0 +1,48 @@
+.week {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 22px;
+}
+.day {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.dayHead {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+}
+.dayName { font-size: 1.05rem; }
+.dayCount { font-size: 0.75rem; color: var(--muted); }
+.slots { padding: 12px 14px; display: flex; flex-direction: column; gap: 10px; }
+.slot {
+  border: 1.5px dashed var(--line);
+  border-radius: var(--radius);
+  padding: 10px;
+  min-height: 76px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.slotFilled { border-style: solid; border-color: var(--glow); background: rgba(242, 169, 59, 0.08); }
+.slotLabel {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+.slotRecipe { font-family: var(--display); font-size: 0.98rem; line-height: 1.2; }
+.slotEmpty { color: #b8ab9d; font-size: 0.85rem; }
+.remove {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  color: var(--danger);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0;
+}
+.toolbar { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
