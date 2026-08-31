@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <rect width="640" height="360" fill="#241b2f"/>
+  <circle cx="320" cy="180" r="54" fill="#f2a93b"/>
+  <path d="M305 152 L305 208 L352 180 Z" fill="#241b2f"/>
+  <text x="320" y="300" font-family="Georgia, serif" font-size="24" fill="#d9cfe4" text-anchor="middle">Cooking tutorial</text>
+</svg>
