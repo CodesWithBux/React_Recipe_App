@@ -1,14 +1,15 @@
-// Entry point — mounts <App /> inside a BrowserRouter so routing works app-wide.
+// Entry point — mounts <App /> inside a HashRouter so routing works app-wide,
+// including after a page refresh on GitHub Pages (which has no SPA server fallback).
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import App from './App.jsx';
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
