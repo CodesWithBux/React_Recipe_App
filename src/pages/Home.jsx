@@ -35,7 +35,7 @@ function Home({ recipes, isLoading = false }) {
         </div>
         <img
           className={styles.heroImg}
-          src="/assets/images/home-fruit-salad.png"
+          src="assets/images/home-fruit-salad.png"
           alt="A bright bowl of fresh fruit salad with apple, strawberry, blueberry, raspberry and citrus"
         />
       </section>
@@ -77,7 +77,7 @@ function Home({ recipes, isLoading = false }) {
         </div>
         {/* AUDIO component with play/pause + fallback (local placeholder clip) */}
         <AudioPlayer
-          audioUrl="/assets/audio/cooking-tips.mp3"
+          audioUrl="assets/audio/cooking-tips.mp3"
           title="Kitchen tips — before you start"
         />
       </section>

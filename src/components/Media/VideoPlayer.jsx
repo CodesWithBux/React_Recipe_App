@@ -39,7 +39,7 @@ function VideoPlayer({ videoUrl, title = 'Cooking tutorial' }) {
         ref={videoRef}
         controls
         width="100%"
-        poster="/assets/images/video-poster.svg"
+        poster="assets/images/video-poster.svg"
         onPlay={() => setPlaying(true)}
         onPause={() => setPlaying(false)}
       >
