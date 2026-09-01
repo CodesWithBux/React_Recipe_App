@@ -37,8 +37,6 @@ spanning breakfast, lunch, dinner, dessert, and snacks.
 ### Favourites
 ![Favourites](screenshots/luminous-05-favourites.png)
 
-### Mobile responsive view
-![Mobile responsive view](screenshots/luminous-06-mobile.png)
 
 ## Accessibility
 
